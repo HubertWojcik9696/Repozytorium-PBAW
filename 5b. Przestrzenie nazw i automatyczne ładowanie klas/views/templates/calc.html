@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplikacja z jednym " punktem="" wejścia".="" model="" mvc,="" w="" którym="" jeden="" główny="" kontroler="" używa="" różnych="" obiektów="" kontrolerów="" zależności="" od="" wybranej="" akcji="" -="" przekazanej="" parametrem."="">
+    <title>Przykład 06</title>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://kudlacik.eu/php_projects/php_06_uproszczony/css/style.css">
+    <link id="chromealerabat-link" rel="stylesheet" type="text/css" href="chrome-extension://dacdinoicboceafielngnmjjplncljhj/content.css"><style>[_nghost-ng-c2697620354]{font-family:Open Sans,sans-serif;color:#121212}</style></head>
+<body>
+
+<div class="header">
+    <h1>Przykład 06</h1>
+    <h2>Kontroler główny</h2>
+    <p>
+        Aplikacja z jednym "punktem wejścia". Model MVC, w którym jeden główny kontroler używa różnych obiektów kontrolerów w zależności od wybranej akcji - przekazanej parametrem.
+    </p>
+</div>
+
+<div class="content">
+
+
+    <h3>Prosty kalkulator</h3>
+
+
+    <form class="pure-form pure-form-stacked" action="/php_projects/php_06_uproszczony/app/ctrl.php?action=calcCompute" method="post">
+        <fieldset>
+            <label for="x">Pierwsza liczba</label>
+            <input id="x" type="text" placeholder="wartość x" name="x" value="">
+            <label for="op">Operacja</label>
+            <select id="op" name="op">
+
+                <option value="plus">(+) dodaj</option>
+                <option value="minus">(-) odejmij </option>
+                <option value="times">(*) pomnóż</option>
+                <option value="div">(/) podziel</option>
+            </select>
+
+            <label for="y">Druga liczba</label>
+            <input id="y" type="text" placeholder="wartość y" name="y" value="">
+        </fieldset>
+        <button type="submit" class="pure-button pure-button-primary">Oblicz</button>
+    </form>
+
+    <div class="messages">
+
+
+
+
+
+
+    </div>
+
+
+</div><!-- content -->
+
+<div class="footer">
+    <p>
+        przykładowa tresć stopki wpisana do szablonu głównego z szablonu kalkulatora
+    </p>
+    <p>
+        Widok oparty na stylach <a href="http://purecss.io/" target="_blank">Pure CSS Yahoo!</a>. (autor przykładu: Przemysław Kudłacik)
+    </p>
+</div>
+
+
+</body>
+</html>
